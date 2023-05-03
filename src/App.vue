@@ -1,7 +1,12 @@
 <template>
   <nav>
+    <router-link to="/">Login</router-link> |
+    <router-link to="/">Registro</router-link> |
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Quienes Somos</router-link> |
+    <router-link to="/about">Productos</router-link> |
+    <router-link to="/about">Contacto</router-link> |
+    <router-link to="/about">Administrador</router-link>
   </nav>
   <router-view/>
 </template>
