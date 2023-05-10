@@ -6,7 +6,7 @@ import store from './store'
 //Import our custom CSS
 import './assets/styles.css'
 
-//Import all of Bootstrap's JS
+// Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
 

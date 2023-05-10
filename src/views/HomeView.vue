@@ -1,8 +1,7 @@
 <template>
   <NavBar/>
-  <Carousel/>
+	<Carousel/>
   <AccesoPatitas/>
-	<AccesoProductos/>
 
 </template>
 
@@ -11,7 +10,6 @@
 import NavBar from '@/components/NavBar.vue';
 import Carousel from '@/components/Carousel.vue';
 import AccesoPatitas from '@/components/AccesoPatitas.vue';
-import AccesoProductos from '@/components/AccesoProductos.vue';
 
 
 export default {
@@ -20,7 +18,6 @@ export default {
     NavBar,
     Carousel,
     AccesoPatitas,
-    AccesoProductos
-}
+  }
 }
 </script>

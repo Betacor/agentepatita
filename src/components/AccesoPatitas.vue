@@ -1,31 +1,52 @@
 <template>
+  <div class="container">
 
-    <h1>Busca Mascotas</h1>
-    <div class="card-container">
-      <div class="card lost">
-        <h2>Mascotas perdidas</h2>
-        <p>Busca mascotas que se hayan perdido</p>
-      </div>
+    <div class="card-container col-10">
       <div class="card adoption">
+        <img src="../assets/img/cat_adopcion.png" alt="Mascotas en adopción">
         <h2>Mascotas en adopción</h2>
-        <p>Adopta una mascota y dale un hogar</p>
       </div>
+      <div class="card lost">
+        <img src="../assets/img/cat_perdidos.png" alt="Mascotas perdidas">
+        <h2>Mascotas perdidas</h2>
+      </div>
+      
       <div class="card found">
+        <img src="../assets/img/cat_encontrados.png" alt="Mascotas encontradas">
         <h2>Mascotas encontradas</h2>
-        <p>Encuentra a los dueños de una mascota perdida</p>
       </div>
     </div>
-  </template>
+
+  </div>
+</template>
   
   <script>
   export default {
-    name: "CardsAcceso",
+    name: "AccesoPatitas",
   };
   </script>
   
   <style scoped>
+
+/* *{
+    
+    box-sizing: border-box;
+    
+} */
+
+	.container{
+		border: 5px solid green;
+		margin: 1em auto;
+    height: auto;
+
+	}
+
   .card-container {
+		margin: 1em auto;
+		border: 5px solid red;
     display: flex;
+    height: auto;
+
     justify-content: space-between;
   }
   
@@ -36,8 +57,7 @@
     align-items: center;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    background-color: #e6e6e6;
+    background-color: #ca1212;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -47,7 +67,9 @@
   }
   
   .lost {
-    background-color: #ff8c00;
+    background-color: hsl(210, 87%, 46%);
+  border-radius: 10%;
+
   }
   
   .adoption {
@@ -57,4 +79,12 @@
   .found {
     background-color: #1e90ff;
   }
+  .card img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+
   </style>
+  

@@ -1,18 +1,18 @@
 <template>
     <div class="card-container">
       <div class="card adoption">
-        <img src="ruta-de-tu-imagen-adopcion.jpg" alt="Mascotas en adopción">
+        <img src="../assets/img/cat_adopcion.png" alt="Mascotas en adopción">
         <h2>Mascotas en adopción</h2>
         <p>Adopta una mascota y dale un hogar</p>
       </div>
       <div class="card lost">
-        <img src="../assets/img/catinspector.png" alt="Mascotas perdidas">
+        <img src="../assets/img/cat_perdidos.png" alt="Mascotas perdidas">
         <h2>Mascotas perdidas</h2>
         <p>Busca mascotas que se hayan perdido</p>
       </div>
       
       <div class="card found">
-        <img src="ruta-de-tu-imagen-encontradas.jpg" alt="Mascotas encontradas">
+        <img src="../assets/img/cat_encontrados.png" alt="Mascotas encontradas">
         <h2>Mascotas encontradas</h2>
         <p>Encuentra a los dueños de una mascota perdida</p>
       </div>
