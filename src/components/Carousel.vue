@@ -36,4 +36,7 @@
 
 <style scoped>
 
+.carousel {
+  height: 500px !important;
+}
 </style>
