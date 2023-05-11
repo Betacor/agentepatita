@@ -2,7 +2,7 @@
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Agente🐾Patita</a>
+			<router-link class="navbar-brand" to="/">Agente🐾Patita</router-link>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -10,21 +10,21 @@
 				<ul class="navbar-nav ms-auto">
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#">Quienes Somos</a>
+						<router-link class="nav-link" to="/quienessomos">Quienes Somos</router-link>
 					</li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Busca Patitas</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Patitas en Adopción</a>
-                            <a class="dropdown-item" href="#">Patitas Perdidas</a>
-                            <a class="dropdown-item" href="#">Patitas Encontradas</a>
-                        </div>
-                    </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Busca Patitas</a>
+              <div class="dropdown-menu">
+                  <router-link class="dropdown-item" to="/patitas">Patitas en Adopción</router-link>
+                  <router-link class="dropdown-item" to="/patitas">Patitas Perdidas</router-link>
+                  <router-link class="dropdown-item" to="/patitas">Patitas Encontradas</router-link>
+              </div>
+          </li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Busca Productos</a>
+						<router-link class="nav-link" to="/productos">Busca Productos</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
+						<router-link class="nav-link" to="/contacto">Contacto</router-link>
 					</li>
 					
 				</ul>

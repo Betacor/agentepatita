@@ -52,7 +52,7 @@
 }
 
 .card {
-  margin: 20px;
+  margin: 50px;
   border: 0;
 }
 
@@ -67,6 +67,10 @@
 .card-img-top {
   height: 200px; /* ajustar según sea necesario */
   object-fit: cover; /* para asegurarse de que las imágenes se ajusten al tamaño especificado sin deformarse */
+}
+
+.card-title{
+  text-align: center;
 }
 
 </style>

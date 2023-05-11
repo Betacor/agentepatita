@@ -1,5 +1,5 @@
 <template>
-  <!-- <h1 class="title">Productos</h1> -->
+  <h1 class="title">Busca Productos</h1>
   <div class="container">
     <div class="row g-3 justify-content-center">
 
@@ -124,11 +124,11 @@ h2 {
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin: 1em;
-    /* text-align: left; */
-    font-weight: bold;
-    color: rgb(114, 114, 114);
+    text-align: center;
+    /* font-weight: bold; */
+    color: rgb(0, 0, 0);
 
 }
 

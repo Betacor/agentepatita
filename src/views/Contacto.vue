@@ -1,6 +1,6 @@
 <template>
 	<NavBar/>
-  <h1>Contacto</h1>
+  <Footer/>  
   
 
   
@@ -8,11 +8,14 @@
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
+
 
 export default {
 	name: "Contacto",
 	components:{
 		NavBar,
+    Footer
 	}
 }
 

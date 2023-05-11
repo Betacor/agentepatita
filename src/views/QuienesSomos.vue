@@ -1,16 +1,19 @@
 <template>
   <NavBar/>
-  <h1>Quienes Somos</h1>
+  <Footer/>
   
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue';
+
 
 export default {
 	name: "QuienesSomos",
 	components:{
 		NavBar,
+    Footer
 	}
 }
 

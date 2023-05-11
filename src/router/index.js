@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home.vue'
 import QuienesSomos from '../views/QuienesSomos.vue'
-import Patitas from '../views/Patitas.vue'
-import Productos from '../views/Productos.vue'
+import BuscaPatitas from '../views/BuscaPatitas.vue'
+import BuscaProductos from '../views/BuscaProductos.vue'
 import Contacto from '../views/Contacto.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: Home
   },
   {
     path: '/quienessomos',
@@ -19,12 +19,12 @@ const routes = [
   {
     path: '/patitas',
     name: 'patitas',
-    component: Patitas
+    component: BuscaPatitas
   },
   {
     path: '/productos',
     name: 'productos',
-    component: Productos
+    component: BuscaProductos
   },
   {
     path: '/contacto',

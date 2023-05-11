@@ -1,6 +1,5 @@
 <template>
 	<NavBar/>
-  <h1>Patitas</h1>
 	<CardsPatitas/>
   
 

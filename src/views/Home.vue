@@ -16,7 +16,7 @@ import Footer from '@/components/Footer.vue';
 
 
 export default {
-  name: 'HomeView',
+  name: 'Home',
   components: {
     NavBar,
     Carousel,

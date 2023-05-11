@@ -25,7 +25,7 @@
   };
   </script>
   
-  <style>
+  <style scoped>
   .card-container {
     display: flex;
     justify-content: space-between;
