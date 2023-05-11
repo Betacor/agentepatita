@@ -15,17 +15,17 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../assets/img/lonelycat.jpg" class="d-block w-100" alt="...">
+        <img src="../assets/img/encontrados.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>PATITAS PERDIDAS</h5>
           <p>Busca mascotas que se hayan perdido</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../assets/img/encontrados.png" class="d-block w-100" alt="...">
+        <img src="../assets/img/lonelycat.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>PATITAS ENCONTRADAS</h5>
-          <p>Encuentra a los dueños <br>de una mascota perdida</p>
+          <p>Encuentra a los dueños de una mascota perdida</p>
           
         </div>
       </div>

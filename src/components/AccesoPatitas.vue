@@ -1,23 +1,39 @@
 <template>
+
   <div class="container">
 
-    <div class="card-container col-10">
-      <div class="card adoption">
-        <img src="../assets/img/cat_adopcion.png" alt="Mascotas en adopción">
-        <h2>Mascotas en adopción</h2>
+    <div class="card">
+      <a href="/patitas">
+        <img src="../assets/img/cat_adopcion.png" class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">Patitas en Adopción</h5>
+        <!-- <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p> -->
       </div>
-      <div class="card lost">
-        <img src="../assets/img/cat_perdidos.png" alt="Mascotas perdidas">
-        <h2>Mascotas perdidas</h2>
+    </div>
+
+    <div class="card">
+      <a href="/patitas">
+        <img src="../assets/img/cat_perdidos.png" class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">Patitas Perdidas</h5>
+        <!-- <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p> -->
       </div>
-      
-      <div class="card found">
-        <img src="../assets/img/cat_encontrados.png" alt="Mascotas encontradas">
-        <h2>Mascotas encontradas</h2>
+    </div>
+
+    <div class="card">
+      <a href="/patitas">
+        <img src="../assets/img/cat_encontrados.png" class="card-img-top" alt="...">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">Patitas Encontradas</h5>
+        <!-- <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p> -->
       </div>
     </div>
 
   </div>
+
 </template>
   
   <script>
@@ -28,63 +44,30 @@
   
   <style scoped>
 
-/* *{
-    
-    box-sizing: border-box;
-    
-} */
-
-	.container{
-		border: 5px solid green;
-		margin: 1em auto;
-    height: auto;
-
-	}
-
-  .card-container {
-		margin: 1em auto;
-		border: 5px solid red;
-    display: flex;
-    height: auto;
-
-    justify-content: space-between;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background-color: #ca1212;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.1);
-  }
-  
-  .lost {
-    background-color: hsl(210, 87%, 46%);
-  border-radius: 10%;
-
-  }
-  
-  .adoption {
-    background-color: #32cd32;
-  }
-  
-  .found {
-    background-color: #1e90ff;
-  }
-  .card img {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-  /* border-radius: 50%; */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3em;
 }
 
-  </style>
+.card {
+  margin: 20px;
+  border: 0;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  height: 200px; /* ajustar según sea necesario */
+  object-fit: cover; /* para asegurarse de que las imágenes se ajusten al tamaño especificado sin deformarse */
+}
+
+</style>
   
