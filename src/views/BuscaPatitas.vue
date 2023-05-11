@@ -1,6 +1,7 @@
 <template>
 	<NavBar/>
 	<CardsPatitas/>
+  <Footer/>
   
 
   
@@ -9,12 +10,15 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import CardsPatitas from '@/components/CardsPatitas.vue'
+import Footer from '@/components/Footer.vue';
+
 
 export default {
 	name: "Patitas",
 	components:{
 		NavBar,
-		CardsPatitas
+		CardsPatitas,
+    Footer
 	}
 }
 
