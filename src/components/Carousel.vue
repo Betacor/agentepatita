@@ -10,21 +10,21 @@
       <div class="carousel-item active">
         <img src="../assets/img/gato-mano.jpeg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>PATITAS EN ADOPCION</h5>
+          <h5 class="lead">PATITAS EN ADOPCION</h5>
           <p>Adopta una mascota y dale un hogar</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="../assets/img/encontrados.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>PATITAS PERDIDAS</h5>
+          <h5 class="lead">PATITAS PERDIDAS</h5>
           <p>Busca mascotas que se hayan perdido</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="../assets/img/lonelycat.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>PATITAS ENCONTRADAS</h5>
+          <h5 class="lead">PATITAS ENCONTRADAS</h5>
           <p>Encuentra a los dueños de una mascota perdida</p>
           
         </div>
@@ -69,7 +69,7 @@
 }
 
 .carousel-caption h5 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .carousel-caption p {

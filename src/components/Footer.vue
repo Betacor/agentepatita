@@ -25,6 +25,6 @@ h6{
   color: white;
   text-align: center;
   font-weight: light;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 </style>

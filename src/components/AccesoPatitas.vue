@@ -44,16 +44,26 @@
   
   <style scoped>
 
+*{
+  background-color: #ffd887;
+
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3em;
+  /* background-color: #ffd887; */
 }
 
 .card {
-  margin: 50px;
+  margin: 30px;
+  padding: 30px;
   border: 0;
+  background-color: #ffd887;
+
+  
 }
 
 .card img {
@@ -65,12 +75,13 @@
 }
 
 .card-img-top {
-  height: 200px; /* ajustar según sea necesario */
-  object-fit: cover; /* para asegurarse de que las imágenes se ajusten al tamaño especificado sin deformarse */
+  height: 220px; /* ajustar según sea necesario */
+  object-fit: cover; /*para asegurarse de que las imágenes se ajusten al tamaño especificado sin deformarse */
 }
 
 .card-title{
   text-align: center;
+  font-size: 1.5em;
 }
 
 </style>

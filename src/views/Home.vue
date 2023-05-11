@@ -2,6 +2,7 @@
   <NavBar/>
   <Carousel/>
   <AccesoPatitas/>
+  <PublicaAviso/>
   <Footer/>
 
 </template>
@@ -11,6 +12,7 @@
 import NavBar from '@/components/NavBar.vue';
 import Carousel from '@/components/Carousel.vue';
 import AccesoPatitas from '@/components/AccesoPatitas.vue';
+import PublicaAviso from '@/components/PublicaAviso.vue';
 import Footer from '@/components/Footer.vue';
 
 
@@ -21,7 +23,18 @@ export default {
     NavBar,
     Carousel,
     AccesoPatitas,
-    Footer
-  }
+    PublicaAviso,
+    Footer,
+    
+}
 }
 </script>
+
+<style scoped>
+
+*{
+  background-color: #ffd887;
+
+}
+
+</style>
