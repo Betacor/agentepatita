@@ -4,6 +4,7 @@ import QuienesSomos from '../views/QuienesSomos.vue'
 import BuscaPatitas from '../views/BuscaPatitas.vue'
 import BuscaProductos from '../views/BuscaProductos.vue'
 import Contacto from '../views/Contacto.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/contacto',
     name: 'contacto',
     component: Contacto
+  },
+  { 
+    path: '/:pathMatch(.*)*',
+    name: 'NotFoundView',
+    component: NotFoundView 
   }
 ]
 
