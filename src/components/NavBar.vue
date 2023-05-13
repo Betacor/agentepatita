@@ -20,9 +20,9 @@
                   <router-link class="dropdown-item" to="/patitas">Patitas Encontradas</router-link>
               </div>
           </li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<router-link class="nav-link" to="/productos">Busca Productos</router-link>
-					</li>
+					</li> -->
 					<li class="nav-item">
 						<router-link class="nav-link" to="/contacto">Contacto</router-link>
 					</li>

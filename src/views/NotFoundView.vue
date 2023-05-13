@@ -1,11 +1,13 @@
 <template>
+
+  <NavBar/>
   
   <div class="container">
 
-    <div class="card" style="width: rem;">
+    <div class="card" style="width: 50rem;">
       <img src="../assets/img/7_1-SamFind-mascota.jpeg" class="card-img-top" alt="...">
       <div class="card-body ">
-        <h5 class="card-title">Parece que te has perdido</h5>
+        <h5 class="card-title">Parece que te has perdido T.T</h5>
         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
         
         <div class="container-btn d-flex justify-content-center">
@@ -15,6 +17,8 @@
       </div>
     </div>
   </div>
+
+  <Footer/>
 
 
 </template>
@@ -36,31 +40,26 @@ export default {
 
 <style scoped>
 
+
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Para centrar verticalmente */
+  padding: 3rem;
 }
 
-/* .card-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-} */
 
 .card-title{
   text-align: center;
 }
 
+
+
 .btn{
   align-items: center;
 }
 
-/* .card-img-top{
-  width: 500px;
-} */
 
 
 </style>
