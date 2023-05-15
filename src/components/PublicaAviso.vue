@@ -34,15 +34,21 @@
             </div>
             <div class="mb-3">
               <label for="nombre" class="form-label">Sexo:</label>
-              <input v-model="nombre" type="text" class="form-control" id="sexo" required>
+              <!-- <input v-model="nombre" type="text" class="form-control" id="sexo" required> -->
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>---</option>
+                <option value="1">Hembra</option>
+                <option value="2">Macho</option>
+              </select>
             </div>
+            
             <div class="mb-3">
               <label for="microchip" class="form-label">Microchip</label>
               <input v-model="microchip" type="tel" class="form-control" id="microchip" required>
             </div>
             <div class="mb-3">
-              <label for="formFileSm" class="form-label">Subir Imagen</label>
-              <input class="form-control form-control-sm" id="formFileSm" type="file">
+              <label for="formFile" class="form-label">Subir Imagen:</label>
+              <input class="form-control" id="formFile" type="file">
             </div>
             <div class="mb-3">
               <label for="descripcion" class="form-label">Descripcion</label>
@@ -101,15 +107,20 @@
             </div>
             <div class="mb-3">
               <label for="nombre" class="form-label">Sexo:</label>
-              <input v-model="nombre" type="text" class="form-control" id="sexo" required>
+              <!-- <input v-model="nombre" type="text" class="form-control" id="sexo" required> -->
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>---</option>
+                <option value="1">Hembra</option>
+                <option value="2">Macho</option>
+              </select>
             </div>
             <div class="mb-3">
               <label for="microchip" class="form-label">Microchip</label>
               <input v-model="microchip" type="tel" class="form-control" id="microchip" required>
             </div>
             <div class="mb-3">
-              <label for="formFileSm" class="form-label">Subir Imagen</label>
-              <input class="form-control form-control-sm" id="formFileSm" type="file">
+              <label for="formFile" class="form-label">Subir Imagen:</label>
+              <input class="form-control" id="formFile" type="file">
             </div>
             <div class="mb-3">
               <label for="descripcion" class="form-label">Descripcion</label>
