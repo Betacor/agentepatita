@@ -1,6 +1,6 @@
 <template>
 	<NavBar/>
-  <CardsProducts/>
+  <CardsEncontradas/>
   <Footer/>
 
   
@@ -8,17 +8,17 @@
 
 <script>
 import NavBar from '@/components/NavBar.vue';
-import CardsProducts from '@/components/CardsProducts.vue'
 import Footer from '@/components/Footer.vue';
+import CardsEncontradas from '@/components/CardsEncontradas.vue';
 
 
 export default {
 	name: "Productos",
 	components:{
-		NavBar,
-    CardsProducts,
-    Footer
-	}
+    NavBar,
+    Footer,
+    CardsEncontradas
+}
 }
 
 </script>

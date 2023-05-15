@@ -15,13 +15,13 @@
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Busca Patitas</a>
               <div class="dropdown-menu">
-                  <router-link class="dropdown-item" to="/patitas">Patitas en Adopción</router-link>
-                  <router-link class="dropdown-item" to="/patitas">Patitas Perdidas</router-link>
-                  <router-link class="dropdown-item" to="/patitas">Patitas Encontradas</router-link>
+                  <router-link class="dropdown-item" to="/patitasAdopcion">Patitas en Adopción</router-link>
+                  <router-link class="dropdown-item" to="/patitasPerdidas">Patitas Perdidas</router-link>
+                  <router-link class="dropdown-item" to="/patitasEncontradas">Patitas Encontradas</router-link>
               </div>
           </li>
 					<!-- <li class="nav-item">
-						<router-link class="nav-link" to="/productos">Busca Productos</router-link>
+						<router-link class="nav-link" to="/patitas-json">Busca Productos</router-link>
 					</li> -->
 					<li class="nav-item">
 						<router-link class="nav-link" to="/contacto">Contacto</router-link>

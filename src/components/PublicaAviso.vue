@@ -2,7 +2,7 @@
 	
 	<div class="container-fluid">
     <div>
-      <h1>Publica tu aviso</h1>
+      <h1>🔎Publica tu mascota</h1>
       <div class="container-btn">
         <button type="button" class="btn btn-dark"><a href="/patitas"> Ingresa al formulario</a></button>
         <!-- <button type="button" class="btn btn-dark"><a href="/patitas"> Productos</a></button> -->

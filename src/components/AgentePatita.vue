@@ -5,7 +5,7 @@
       <img src="../assets/img/cat_perdidos.png" alt="">
       <div>
         <h5>AgentePatita es un portal de servicio y de ayuda comunitaria dedicado a toda aquella persona que desee adoptar o dar en adopción una mascota, y buscar aquellas que están perdidas o a sus dueños.</h5>
-        <h5>En este espacio también podras acceder a otros portales de productos recomendados para su compra y así regalonear a nuestros peludos con los mejores gadgets.</h5>
+        <!-- <h5>En este espacio también podras acceder a otros portales de productos recomendados para su compra y así regalonear a nuestros peludos con los mejores gadgets.</h5> -->
         <h4>Espero que éste espacio sea de tu agrado, si tienes dudas y/o sugerencias del sitio, no dudes en contactarme.</h4>
         <h4>Saludos de patita Amiga🐾</h4>
 
