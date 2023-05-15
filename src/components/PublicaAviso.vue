@@ -114,10 +114,48 @@
                 <option value="2">Macho</option>
               </select>
             </div>
-            <div class="mb-3">
-              <label for="microchip" class="form-label">Microchip</label>
+
+
+          <!-- MICROCHIP-->
+            <!-- <div class="mb-3">
+              <label for="microchip" class="form-label"></label>
               <input v-model="microchip" type="tel" class="form-control" id="microchip" required>
-            </div>
+            </div> -->
+
+
+
+            <!-- <div class="mb-3">
+              <label for="microchip" class="form-label">¿Tiene microchip?: </label>
+
+              <div class="form-check">
+          <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        <label class="form-check-label" for="optionsRadios1">
+          Option one is this and that—be sure to include why it's great
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        <label class="form-check-label" for="optionsRadios2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="si" id="tieneMicrochipSi" name="tieneMicrochip" required>
+                <label class="form-check-label" for="tieneMicrochipSi">Sí</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="no" id="tieneMicrochipNo" name="tieneMicrochip" required>
+                <label class="form-check-label" for="tieneMicrochipNo">No</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="noSabe" id="tieneMicrochipNoSabe" name="tieneMicrochip" required>
+                <label class="form-check-label" for="tieneMicrochipNoSabe">No lo sé</label>
+              </div>
+          
+            </div> -->
+
+
+            
             <div class="mb-3">
               <label for="formFile" class="form-label">Subir Imagen:</label>
               <input class="form-control" id="formFile" type="file">

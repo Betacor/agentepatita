@@ -2,7 +2,7 @@
   <div class="container-fluid">
 
 		<div class="row justify-content-center">
-    <h1 class="title">🐾Patitas en Adopción</h1>
+      <h1 class="title">🐾Patitas en Adopción</h1>
 
       <div v-for="patita in patitasAdopcion" :key="patita.nombre" class="card col-md-2" style="width: 18rem;">
         <img :src= "patita.imagen" class="card-img-top" alt="image">
