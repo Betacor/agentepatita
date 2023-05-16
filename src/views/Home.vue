@@ -3,6 +3,8 @@
   <Carousel/>
   <AccesoPatitas/>
   <PublicaAviso/>
+  <GatosCards/>
+  <!-- <WidgetTelegram/> -->
   <Footer/>
 
 </template>
@@ -14,7 +16,10 @@ import Carousel from '@/components/Carousel.vue';
 import AccesoPatitas from '@/components/AccesoPatitas.vue';
 import PublicaAviso from '@/components/PublicaAviso.vue';
 import Footer from '@/components/Footer.vue';
+import GatosCards from '@/components/GatosCards.vue';
 
+import {mapActions} from 'vuex'
+import WidgetTelegram from '@/components/WidgetTelegram.vue';
 
 
 export default {
@@ -25,8 +30,15 @@ export default {
     AccesoPatitas,
     PublicaAviso,
     Footer,
-    
-}
+    GatosCards,
+    WidgetTelegram
+},
+  computed: {
+    ...mapActions(['cargarGatos'])
+  },
+  async created() {
+    await this.cargarGatos;
+  }
 }
 </script>
 
