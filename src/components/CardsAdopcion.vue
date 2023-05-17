@@ -14,7 +14,7 @@
           <p class="card-text"><strong>Email : </strong>{{ patita.email }}</p>
           <p class="card-text"><strong>Telefono : </strong>{{ patita.telefono }}</p>
           
-          <a href="#" class="btn btn-primary">Más Info</a>
+          <!-- <a href="#" class="btn btn-primary">Más Info</a> -->
         </div>
 			</div>
 		</div>
