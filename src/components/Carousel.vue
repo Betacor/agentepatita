@@ -9,24 +9,29 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../assets/img/gato-mano.jpeg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="lead">PATITAS EN ADOPCION</h5>
-          <p>Adopta una mascota y dale un hogar</p>
+        <div class="carousel-caption d-md-block adopcion">
+          <div class="text-left">
+            <h5 class="lead adopcion">PATITAS EN ADOPCION</h5>
+            <h6>Adopta una mascota y dale un hogar</h6>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="../assets/img/encontrados.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="lead">PATITAS PERDIDAS</h5>
-          <p>Busca mascotas que se hayan perdido</p>
+        <div class="carousel-caption d-md-block perdidas">
+          <div class="text-left">
+            <h5 class="lead">PATITAS PERDIDAS</h5>
+            <h6>Busca mascotas que se hayan perdido</h6>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="../assets/img/lonelycat.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="lead">PATITAS ENCONTRADAS</h5>
-          <p>Encuentra a los dueños de una mascota perdida</p>
-          
+        <div class="carousel-caption d-md-block encontradas">
+          <div class="text-right">
+            <h5 class="lead ">PATITAS ENCONTRADAS</h5>
+            <h6>Encuentra a los dueños de una mascota perdida</h6>
+        </div>
         </div>
       </div>
     </div>
@@ -55,21 +60,41 @@
   object-fit: cover;
 }
 
-.carousel-caption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  left: -40%;
-  transform: translateY(-100%);
-}
 
 .carousel-inner {
   height: 100%;
 }
 
+.carousel-caption .text-left {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px ;
+  font-weight: lighter;
+  padding: 1em;
+  width: 100%;
+
+  
+}
+ 
+.carousel-caption .text-right {
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border-radius: 10px ;
+
+
+
+}
 .carousel-caption h5 {
-  font-size: 2.5em;
+  font-size: 2em;
+  font-weight: bold;
+
+}
+
+.carousel-caption h6 {
+  font-size: 1.5em;
+  font-weight: normal;
+
 }
 
 .carousel-caption p {

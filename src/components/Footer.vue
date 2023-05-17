@@ -1,7 +1,7 @@
 <template>
 	
 	<div class="container-fluid">
-    <h6>AGENTE🐾PATITA© 2023</h6>
+    <h6>AGENTE🐾PATITA© 2023 / by <a href="https://github.com/Betacor">BETALabs</a></h6>
   </div>
 	
     
