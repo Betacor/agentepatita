@@ -8,7 +8,7 @@
 
       <div class="card">
         <a href="/patitasAdopcion">
-          <img src="../assets/img/cat_adopcion.png" class="card-img-top" alt="...">
+          <img src="../assets/img/cat-adopcion.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <h5 class="card-title">Patitas en Adopción</h5>
