@@ -14,10 +14,11 @@ import Footer from '@/components/Footer.vue';
 export default {
 	name: "QuienesSomos",
 	components:{
-		NavBar,
+    NavBar,
     AgentePatita,
     Footer
-	}
+  
+}
 }
 
 </script>

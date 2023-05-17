@@ -1,6 +1,6 @@
 <template>
 	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
 		<div class="container-fluid">
 			<router-link class="navbar-brand" to="/">Agente🐾Patita</router-link>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,6 +23,10 @@
 					<!-- <li class="nav-item">
 						<router-link class="nav-link" to="/patitas-json">Busca Productos</router-link>
 					</li> -->
+
+          <li class="nav-item">
+						<router-link class="nav-link" to="/comunidad">Comunidad</router-link>
+					</li>
 					<li class="nav-item">
 						<router-link class="nav-link" to="/contacto">Contacto</router-link>
 					</li>
@@ -44,9 +48,10 @@
 
 <style scoped>
 
-.navbar {
-    height: 80px; /* ajusta la altura según sea necesario */
-}
+/* .navbar {
+    height: 80px;
+    
+} */
 
 .navbar-brand{
     font-size: 1.6em
@@ -55,6 +60,10 @@
     font-size: 1.2em; /* ajusta el tamaño de la fuente según sea necesario */
 }
 
+nav{
+  z-index: 100 !important;
+  border-color: blueviolet;
+}
 
 
 
