@@ -25,36 +25,26 @@
           <h5 class="modal-title" id="exampleModalLabel">Datos de la Mascota</h5>
           <form>
             <div class="mb-3">
-              <label for="nombreMascota" class="form-label">Nombre Mascota:</label>
-              <input v-model="nombreMascota" type="text" class="form-control" id="nombreMascota" required>
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input v-model="nombre" type="text" class="form-control" id="nombre" required>
             </div>
             <div class="mb-3">
-              <label for="especie" class="form-label">Especie:</label>
-              <input v-model="especie" type="text" class="form-control" id="especie" required>
+              <label for="nombre" class="form-label">Especie:</label>
+              <input v-model="nombre" type="text" class="form-control" id="especie" required>
             </div>
             <div class="mb-3">
-              <label for="sexo" class="form-label">Sexo:</label>
-              <select class="form-select" aria-label="Default select example" required v-model="sexo">
-                <option value="">---</option>
+              <label for="nombre" class="form-label">Sexo:</label>
+              <!-- <input v-model="nombre" type="text" class="form-control" id="sexo" required> -->
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>---</option>
                 <option value="1">Hembra</option>
                 <option value="2">Macho</option>
               </select>
             </div>
+            
             <div class="mb-3">
-              <label for="microchip" class="form-label">Tiene Microchip:</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="optionsRadios" id="radioSi" value="si" >
-                <label class="form-check-label" for="radioSi">Sí</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="optionsRadios" id="radioNo" value="no" >
-                <label class="form-check-label" for="radioNo">No</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="optionsRadios" id="radioNoLoSe" value="noLoSe" >
-                <label class="form-check-label" for="radioNoLoSe">No sé</label>
-              </div>
-              
+              <label for="microchip" class="form-label">Microchip</label>
+              <input v-model="microchip" type="tel" class="form-control" id="microchip" required>
             </div>
             <div class="mb-3">
               <label for="formFile" class="form-label">Subir Imagen:</label>
@@ -117,28 +107,55 @@
             </div>
             <div class="mb-3">
               <label for="sexo" class="form-label">Sexo:</label>
-              <select class="form-select" aria-label="Default select example" required v-model="sexo">
-                <option value="">---</option>
+              <!-- <input v-model="nombre" type="text" class="form-control" id="sexo" required> -->
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected>---</option>
                 <option value="1">Hembra</option>
                 <option value="2">Macho</option>
               </select>
             </div>
-            <div class="mb-3">
-              <label for="microchip" class="form-label">Tiene Microchip:</label>
+
+
+          <!-- MICROCHIP-->
+            <!-- <div class="mb-3">
+              <label for="microchip" class="form-label"></label>
+              <input v-model="microchip" type="tel" class="form-control" id="microchip" required>
+            </div> -->
+
+
+
+            <!-- <div class="mb-3">
+              <label for="microchip" class="form-label">¿Tiene microchip?: </label>
+
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="optionsRadios" id="radioSi" value="si" >
-                <label class="form-check-label" for="radioSi">Sí</label>
+          <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        <label class="form-check-label" for="optionsRadios1">
+          Option one is this and that—be sure to include why it's great
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        <label class="form-check-label" for="optionsRadios2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="si" id="tieneMicrochipSi" name="tieneMicrochip" required>
+                <label class="form-check-label" for="tieneMicrochipSi">Sí</label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="optionsRadios" id="radioNo" value="no" >
-                <label class="form-check-label" for="radioNo">No</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="no" id="tieneMicrochipNo" name="tieneMicrochip" required>
+                <label class="form-check-label" for="tieneMicrochipNo">No</label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="optionsRadios" id="radioNoLoSe" value="noLoSe" >
-                <label class="form-check-label" for="radioNoLoSe">No sé</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="noSabe" id="tieneMicrochipNoSabe" name="tieneMicrochip" required>
+                <label class="form-check-label" for="tieneMicrochipNoSabe">No lo sé</label>
               </div>
-              
-            </div>
+          
+            </div> -->
+
+
+            
             <div class="mb-3">
               <label for="formFile" class="form-label">Subir Imagen:</label>
               <input class="form-control" id="formFile" type="file">
@@ -199,143 +216,85 @@ export default {
   
   data() {
     return {
-      nombreMascota: "",
-      especie: "",
-      sexo: "",
-      microchip: "",
-      descripcion: "",
-      direccion: "",
-      fechaSuceso: "",
       nombre: "",
       apellido: "",
-      correo: "",
+      fechaNacimiento: "",
       telefono: "",
-      
+      correo: "",
+      comentario: ""
     };
   },
   
   methods: {
-
     validacion() {
-      if (!this.nombreMascota) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa el nombre de la Mascota.',
-        });
-        return;
-      } else if (!this.especie) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa la especie.',
-        });
-        return;
-      } else if (!this.sexo) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa el sexo de la mascota.',
-        });
-        return;
-      
-      } else if (!this.descripcion) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa una descripción.',
-        });
-        return;
-      } else if (!this.direccion) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa la dirección aproximada donde se perdió o encontraste la mascota.',
-        });
-        return;
-      } else if (!this.fechaSuceso) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa la fecha cuando se perdió o encontraste la mascota.',
-        });
-        return;
-      } else if (!this.nombre) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa tu nombre.',
-        });
+      if (!this.nombre) {
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingresa tu nombre.',
+    });
         return;
       } else if (!this.apellido) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa tu apellido.',
-        });
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingresa tu apellido.',
+    });
         return;
-      } else if (!this.correo) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa tu correo electrónico.',
-        });
+      } else if (!this.fechaNacimiento) {
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingresa tu fecha de nacimiento.',
+    });
+    return;
+      }else if (!this.telefono) {
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingresa tu número de telefono.',
+    });
         return;
-        // Validar formato de correo
-      } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(this.correo)) {
+    }else if (!this.correo) {
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingresa tu correo electrónico.',
+    });
+    return;
+          // Validar formato de correo
+        } else if ((!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(this.correo))) {
         // Swal("Error", "El correo electrónico no es válido.", "error");
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingrese un correo electrónico válido.',
-        });
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingrese un correo electrónico válido.',
+    });
         return;
-      } else if (!this.telefono) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa tu número de teléfono.',
-        });
+
+      }else if (!this.comentario) {
+        // Swal("Error", "Por favor, completa todos los campos.", "error");
+      Swal.fire({
+      icon: 'error',
+      title: 'Faltan Datos',
+      text: 'Ingresa una descripción.',
+    });
         return;
-        } else {
-      // const imagen = document.getElementById('formFile').files[0];
-      // if (!imagen) {
-      //   Swal.fire({
-      //     icon: 'error',
-      //     title: 'Faltan Datos',
-      //     text: 'Selecciona una imagen.',
-      //   });
-      //   return;
-      // }
-
-      const microchipNo = document.getElementById('radioNo');
-      const microchipSi = document.getElementById('radioSi');
-      const microchipNoLoSe = document.getElementById('radioNoLoSe');
-
-      if (!microchipNo.checked && !microchipSi.checked && !microchipNoLoSe.checked) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Selecciona si la mascota tiene microchip.',
-        });
-        return;
-      }
-
-        Swal.fire({
-          icon: 'success',
-          title: 'Éxito',
-          text: '¡Tus datos fueron enviados correctamente!',
-        }).then(() => {
-        }).then(() => {
-          // Ocultar los formularios utilizando JavaScript puro
-          document.getElementById('formAdopcion').style.display = 'none';
-          document.getElementById('formPerdidosEncontrados').style.display = 'none';
-          window.location.href = '/';
-        });
-      }   
     }
+    else {  
+      Swal.fire({
+      icon: 'success',
+      title: 'Éxito',
+      text: '¡Tus datos fueron enviados correctamente!',
+    
+    });
+    
+
+    }   
   }
 }
+}
+
 
 </script>
 
