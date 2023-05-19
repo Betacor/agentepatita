@@ -1,11 +1,12 @@
 # Agente🐾Patita
 
-## Instalación de proyecto
+## Instalación del proyecto
 ```
 npm install
 ```
 
-### Ejecución
+### Compilación de código para visualización del proyecto
+npm run serve
 ```
 npm run serve
 ```
