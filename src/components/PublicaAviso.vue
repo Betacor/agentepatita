@@ -81,7 +81,7 @@
             </div>
             <div class="mb-3">
               <label for="telefono" class="form-label">Teléfono</label>
-              <input v-model="telefono" type="tel" class="form-control" id="telefono" required>
+              <input v-model="telefono" type="number" class="form-control" id="telefono" placeholder="+56912345678" required>
             </div>
           </form>
         </div>
@@ -174,7 +174,7 @@
             </div>
             <div class="mb-3">
               <label for="telefono" class="form-label">Teléfono</label>
-              <input v-model="telefono" type="tel" class="form-control" id="telefono" required>
+              <input v-model="telefono" type="number" class="form-control" id="telefono" placeholder="+56912345678"  required>
             </div>
             
           </form>
@@ -246,20 +246,20 @@ export default {
           text: 'Ingresa una descripción.',
         });
         return;
-      } else if (!this.direccion) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa la dirección aproximada donde se perdió o encontraste la mascota.',
-        });
-        return;
-      } else if (!this.fechaSuceso) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Ingresa la fecha cuando se perdió o encontraste la mascota.',
-        });
-        return;
+      // } else if (!this.direccion) {
+      //   Swal.fire({
+      //     icon: 'error',
+      //     title: 'Faltan Datos',
+      //     text: 'Ingresa la dirección aproximada donde se perdió o encontraste la mascota.',
+      //   });
+      //   return;
+      // } else if (!this.fechaSuceso) {
+      //   Swal.fire({
+      //     icon: 'error',
+      //     title: 'Faltan Datos',
+      //     text: 'Ingresa la fecha cuando se perdió o encontraste la mascota.',
+      //   });
+      //   return;
       } else if (!this.nombre) {
         Swal.fire({
           icon: 'error',
