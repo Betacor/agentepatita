@@ -21,11 +21,6 @@ const routes = [
     component: QuienesSomos
   },
   {
-    path: '/patitas',
-    name: 'patitas',
-    component: BuscaPatitas
-  },
-  {
     path: '/patitasAdopcion',
     name: 'patitasAdopcion',
     component: PatitasAdopcion

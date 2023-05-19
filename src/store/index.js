@@ -20,10 +20,8 @@ export default createStore({
     setLoading(state, payload) {
       state.loading = payload;
     },
-
-
-
   },
+  
   actions: {
     async cargarGatos({commit}){
       commit('setLoading', true);

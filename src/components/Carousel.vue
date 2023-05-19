@@ -59,12 +59,9 @@
   height: 500px; /* o cualquier otra altura deseada */
   object-fit: cover;
 }
-
-
 .carousel-inner {
   height: 100%;
 }
-
 .carousel-caption .text-left {
   text-align: left;
   background-color: rgba(0, 0, 0, 0.2);
@@ -72,31 +69,21 @@
   font-weight: lighter;
   padding: 1em;
   width: 100%;
-
-  
 }
- 
 .carousel-caption .text-right {
   text-align: right;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 1em;
   border-radius: 10px ;
-
-
-
 }
 .carousel-caption h5 {
   font-size: 2em;
   font-weight: bold;
-
 }
-
 .carousel-caption h6 {
   font-size: 1.5em;
   font-weight: normal;
-
 }
-
 .carousel-caption p {
   font-size: 1.5em;
 }
