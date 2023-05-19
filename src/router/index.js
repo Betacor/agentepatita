@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import QuienesSomos from '../views/QuienesSomos.vue'
-import BuscaPatitas from '../views/BuscaPatitas.vue'
 import PatitasAdopcion from '../views/PatitasAdopcion.vue'
 import PatitasPerdidas from '../views/PatitasPerdidas.vue'
 import PatitasEncontradas from '../views/PatitasEncontradas.vue'

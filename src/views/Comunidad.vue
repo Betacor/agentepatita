@@ -28,17 +28,19 @@
         <div class="gatos d-flex justify-content-center text-center" >
           <div v-if="pet === 'gatos'" class="row row-cols-2 row-cols-md-4 g-4" >
             <div v-for="gato in listaGatos" :key="gato.id" class="row-cols-2 row-cols-md-4 g-4">
-              <img :src="gato.url" alt="" class="img-fluid cat-image">
+              <img :src="gato.url" alt="" class="img-fluid cat-image" @click="openModal(gato.url)">
             </div>
           </div>
           <div v-else-if="pet === 'perros'" class="row row-cols-2 row-cols-md-4 g-4" >
             <div v-for="perro in listaPerros" :key="perro.id" class="row-cols-2 row-cols-md-4 g-4">
-              <img :src="perro.url" alt="" class="img-fluid dog-image">
+              <img :src="perro.url" alt="" class="img-fluid dog-image" @click="openModal(perro.url)">
             </div>
           </div>
         </div>
       </div>
 
+      <Modal :selectedImage="selectedImage" v-if="showModal" @closeModal="closeModal" />
+      
       <h1 class="title" v-if="pet === 'gatos'">¿Eres un DogLover? Entonces entra <a href="/comunidad/perros">aquí</a>!🐾</h1>
 
     </div>
@@ -51,16 +53,25 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
+import Modal from '@/components/Modal.vue';
 import {mapState} from 'vuex'
 import {mapActions} from 'vuex'
 // import {mapMutations} from 'vuex'
 
 
 export default {
+  data() {
+    return {
+      selectedImage: '',
+      showModal: false,
+    };
+  },
+
   name: "Comunidad",
 	components:{
     NavBar,
     Footer,
+    Modal
   }, 
 
   props: ['pet'],
@@ -104,7 +115,15 @@ export default {
 
   methods: {
     ...mapActions(['cargarGatos']),
-    ...mapActions(['cargarPerros'])
+    ...mapActions(['cargarPerros']),
+    openModal(url) {
+      this.selectedImage = url;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.selectedImage = '';
+      this.showModal = false;
+    },
 
   }
 }

@@ -10,5 +10,7 @@ import './assets/styles.css'
 import * as bootstrap from 'bootstrap'
 
 
+
+
 createApp(App).use(bootstrap).use(store).use(router).mount('#app')
 
