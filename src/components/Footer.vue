@@ -27,4 +27,8 @@ h6{
   font-weight: light;
   font-size: 1em;
 }
+
+a{
+  text-decoration: none;
+}
 </style>

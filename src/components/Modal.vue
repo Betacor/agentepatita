@@ -2,8 +2,9 @@
   <div class="modal" v-if="selectedImage">
     <div class="modal-content">
       <img :src="selectedImage" alt="" class="modal-image">
+      <button class="modal-close" @click="closeModal">Cerrar</button>
     </div>
-    <button class="modal-close" @click="closeModal">Cerrar</button>
+    
 
 </div>
 </template>
@@ -40,7 +41,7 @@ export default {
 }
 
 .modal-content {
-  max-width: 800px;
+  width: auto;
   max-height: 80vh;
   background-color: white;
   padding: 20px;
@@ -49,7 +50,8 @@ export default {
 
 .modal-image {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 500px;
+  object-fit: contain;
 }
 
 .modal-close {
