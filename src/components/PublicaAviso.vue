@@ -308,18 +308,18 @@ export default {
       //   return;
       // }
 
-      const microchipNo = document.getElementById('radioNo');
-      const microchipSi = document.getElementById('radioSi');
-      const microchipNoLoSe = document.getElementById('radioNoLoSe');
+      // const microchipNo = document.getElementById('radioNo');
+      // const microchipSi = document.getElementById('radioSi');
+      // const microchipNoLoSe = document.getElementById('radioNoLoSe');
 
-      if (!microchipNo.checked && !microchipSi.checked && !microchipNoLoSe.checked) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Faltan Datos',
-          text: 'Selecciona si la mascota tiene microchip.',
-        });
-        return;
-      }
+      // if (!microchipNo.checked && !microchipSi.checked && !microchipNoLoSe.checked) {
+      //   Swal.fire({
+      //     icon: 'error',
+      //     title: 'Faltan Datos',
+      //     text: 'Selecciona si la mascota tiene microchip.',
+      //   });
+      //   return;
+      // }
 
         Swal.fire({
           icon: 'success',
