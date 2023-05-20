@@ -119,6 +119,9 @@ export default {
     openModal(url) {
       this.selectedImage = url;
       this.showModal = true;
+      const currentUrl = new URL(window.location.href);
+      currentUrl.searchParams.set('img', encodeURIComponent(url));
+      history.pushState(null, null, currentUrl.toString());
     },
     closeModal() {
       this.selectedImage = '';

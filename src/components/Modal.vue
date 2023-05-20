@@ -1,7 +1,7 @@
 <template>
   <div class="modal" v-if="selectedImage">
     <div class="modal-content">
-      <img :src="selectedImage" alt="" class="modal-image">
+      <img :src="getImageUrl()" alt="" class="modal-image">
       <button class="modal-close" @click="closeModal">Cerrar</button>
     </div>
     
@@ -21,7 +21,12 @@ export default {
     closeModal() {
       this.showModal = false;
       this.$emit('closeModal');
+      history.pushState(null, null, '/comunidad/' + this.$route.params.pet);
     },
+    getImageUrl() {
+    const currentUrl = new URL(window.location.href);
+    return decodeURIComponent(currentUrl.searchParams.get('img'));
+  }
   },
 };
 </script>
